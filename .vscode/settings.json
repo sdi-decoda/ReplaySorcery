@@ -1,7 +1,0 @@
-{
-   "editor.tabSize": 3,
-   "files.associations": {
-      "*.h": "c",
-      "*.h.in": "c"
-   }
-}
