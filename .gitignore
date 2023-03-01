@@ -1,4 +1,5 @@
 /bin/
 /etc/
+/.vscode/
 *.mp4
 gmon.out
