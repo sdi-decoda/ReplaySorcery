@@ -1,0 +1,12 @@
+[Unit]
+Description=ReplaySorcery: an open-source, instant-replay solution for Linux.
+After=graphical-session.target replay-sorcery-kms.service
+
+[Service]
+Type=simple
+ExecStart=@CMAKE_INSTALL_PREFIX@/bin/replay-sorcery
+TimeoutStopSec=60
+Restart=always
+
+[Install]
+WantedBy=graphical-session.target
