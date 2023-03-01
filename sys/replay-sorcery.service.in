@@ -8,8 +8,8 @@ ExecStart=@CMAKE_INSTALL_PREFIX@/bin/replay-sorcery
 TimeoutStopSec=60
 Restart=always
 
-StandardOutput=append:$HOME/logs/replay-sorcery.log
-StandardError=append:$HOME/logs/replay-sorcery.log
+StandardOutput=append:~/logs/replay-sorcery.log
+StandardError=append:~/logs/replay-sorcery.log
 
 [Install]
 WantedBy=graphical-session.target
