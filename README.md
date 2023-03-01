@@ -1,4 +1,23 @@
+# ReplaySorcery : sdi-decoda fork
+
+Created to allow modifications if necessary. Added package.xml to allow package recognition in IDE ROS workspace.
+
+## Issues
+#### Compiling ReplaySorcery produces x11 related errors:
+
+**Fix:** Update `cmake` to latest version. Do not uninstall old 3.16 version as this will uninstall some ROS libraries.
+Simplest way is to either:
+- compile from source
+- use `pip install cmake` and copy all folders from Python dist-packages using 
+
+        cp -r /usr/local/lib/python3.8/dist-packages/cmake/data/. ~/.local/
+
+Install binaries in `~/.local` (as long as `~/.local` is earlier in PATH than `/usr/local`).
+
+_________________________
+
 # ReplaySorcery
+
 ## An open-source, instant-replay solution for Linux.
 Back when I used to use windows I used AMD ReLive alot. It, and the nVidia version ShadowPlay Instant Replay, will constantly record the screen without using too much computer resources and at the press of a keycombo will save the last 30 seconds.
 
